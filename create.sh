@@ -18,6 +18,8 @@ if [[ -z "$PROJECT" ]]; then
     exit 1
 fi
 
+PROJECT="${PROJECT}-qa"
+
 # Maven archetype:generate tries to add the new project as a module,
 # so create a temporary container to prevent it.
 CONTAINER=brightspot-selenium-archetype-container
